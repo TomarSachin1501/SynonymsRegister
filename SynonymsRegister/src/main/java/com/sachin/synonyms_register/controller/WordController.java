@@ -24,7 +24,7 @@ public class WordController {
 	@Autowired
 	private WordDtoServiceImplementaion wordService;
 	
-	@PostMapping("")
+	@PostMapping("/")
 	public WordDto createWord(@RequestBody WordDto wordDto)
 	{
 		return wordService.createWord(wordDto);
